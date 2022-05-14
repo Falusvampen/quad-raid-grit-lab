@@ -1,0 +1,98 @@
+/*      Falusvampen
+func QuadA(x, y int) {
+
+	// execution part
+
+	// if 1 and 2 print following
+	if x == 1 && y == 2 {
+		z01.PrintRune('o')
+		z01.PrintRune('\n')
+		z01.PrintRune('o')
+	}
+
+	// if 2 and 1 then print following
+	if x == 2 && y == 1 {
+		z01.PrintRune('o')
+		z01.PrintRune('o')
+	}
+
+	// if x>2 and y = 2 print following
+	if y > 2 && x == 2 {
+		doubleVerticalLine(x)
+	}
+
+	// if 1 and 1 then print o
+	if x == 1 && y == 1 {
+		z01.PrintRune('o')
+	}
+	// if 2 and 2 print square o
+	if x == 2 && y == 2 {
+		z01.PrintRune('o')
+		z01.PrintRune('o')
+		z01.PrintRune('\n')
+		z01.PrintRune('o')
+		z01.PrintRune('o')
+	}
+	// if single horizontal value
+	if y > 2 && x == 1 {
+		horizontalLine(x, y)
+	}
+
+	// if single vertical value
+	if x == 1 && y > 2 {
+		singleVerticalLine(x, y)
+	}
+	// combined values over 2
+	if x > 2 && y > 2 {
+		horizontalLine(x, y)
+		z01.PrintRune('\n')
+		for newLine := 2; newLine < y; newLine++ {
+			doubleVerticalLine(x)
+			z01.PrintRune('\n')
+		}
+		horizontalLine(x, y)
+	}
+
+}
+
+// collection of functions for the main function
+
+// function for printing a single vertical line
+func singleVerticalLine(x, y int) {
+	z01.PrintRune('o')
+	z01.PrintRune('\n')
+	for loop := 0; loop < y; loop++ {
+		z01.PrintRune('|')
+		z01.PrintRune('\n')
+	}
+	z01.PrintRune('o')
+}
+
+// function for printing double vertical line
+/*func doubleVerticalLine(x, y int) {
+	for loop2 := 2; loop2 < y; loop2++ {
+		z01.PrintRune('|')
+		for space := 2; space < x; space++ {
+			z01.PrintRune(' ')
+		}
+		z01.PrintRune('|')
+	}
+}
+
+func doubleVerticalLine(x int) {
+	z01.PrintRune('|')
+	for space := 2; space < x; space++ {
+		z01.PrintRune(' ')
+	}
+	z01.PrintRune('|')
+}
+
+// function for printing horizontal line
+func horizontalLine(x, y int) {
+	z01.PrintRune('o')
+	for loop1 := 2; loop1 < x; loop1++ {
+		z01.PrintRune('-')
+	}
+	z01.PrintRune('o')
+}
+*/
